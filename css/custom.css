@@ -128,6 +128,9 @@ hr:after {
 .buttons:hover {
   background: #e05a4d;
 }
+.button-2 {
+  padding: 12px 71px;
+}
 
 /* Text card section */
 .container_content__card {
