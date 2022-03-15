@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="page-id-contact">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/send-email.js"></script>
+    <script src="js/custom.js"></script>
+    <title>Contato - Teste Hit Digital</title>
+  </head>
+  <body>
+    <div class="preloader">
+        <img src="img/preloader.gif" class="img_prealoader" alt="" srcset="">
+      </div>
+    <section>
+      <div class="container">
+        <div class="container_content__logo">
+          <img
+            src="./img/logo-hit-branco.svg"
+            class="logo"
+            alt="logo Hit digital"
+          />
+        </div>
+        <div class="container_content__buttons">
+          <a class="buttons" href="/teste-hit">Introdução</a>
+          <a class="buttons" href="contact.html">Contato</a>
+        </div>
+
+        <div class="container_content__introduction">
+          <p class="text-center title_section">Contato</p>
+          <hr />
+        </div>
+        <div class="container_content__card_contato">
+            <form id="form-contact">
+                <input type="text" id="name" name="name" placeholder="Nome*">
+                <input type="text" id="email" name="email" placeholder="E-mail*">
+                <textarea id="message" name="message" placeholder="Mensagem*"></textarea>
+                <button id="send" class="container_content__button_send">
+                    enviar
+                </button>
+            </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

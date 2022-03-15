@@ -1,0 +1,290 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+/* Basic css reset*/
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+body {
+  font-size: 100%;
+  list-style-type: none;
+  background-color: #2d2d2d;
+  font-family: "Montserrat", sans-serif;
+}
+section {
+  width: 100%;
+  padding: 100px;
+}
+
+/* ordinary class */
+.text-center {
+  text-align: center;
+}
+/* prealoader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+.img_prealoader {
+  height: 200px;
+}
+
+/* HR and svg icon */
+
+hr {
+  width: 122px;
+  height: 0px;
+  background: transparent;
+  border: 2px solid #707070;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  text-align: center; /* horizontal centering */
+  line-height: 0px; /* vertical centering */
+
+  border: 2px solid #707070;
+  margin: 0 10px;
+  overflow: visible;
+
+  /* ensure 1px gap between borders */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+hr:after {
+  content: url("../img/icon-hr.svg"); /* section sign */
+  /* background: linear-gradient(#ea916b 0%, #e05a4d 100%); */
+  /* display: inline; /* for vertical centering and background knockout */
+  /* background-color: #454545; same as background color */
+  padding: 0 20px; /* size of background color knockout */
+  position: absolute;
+}
+
+/* opera doesn't render correctly. hide section sign */
+x:-o-prefocus,
+hr:after {
+  content: url("../img/icon-hr.svg");
+}
+
+/* General container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* title of sections */
+.title_section {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 45px 0 0 0;
+}
+.logo {
+  max-width: 160px;
+  margin: 60px auto;
+}
+
+/* ordinary buttons */
+.buttons {
+  width: 200px;
+  height: 40px;
+  min-height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(#ea916b 0%, #e05a4d 100%);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+  padding: 12px 58px;
+  margin: 0 8px;
+  text-transform: uppercase;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 12px; /* The ideal, for a good user reading, would be a 16px font-size */
+  text-align: center;
+  color: #fff;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.buttons:hover {
+  background: #e05a4d;
+}
+
+/* Text card section */
+.container_content__card {
+  width: 780px;
+  height: 435px;
+  padding: 40px;
+  border-radius: 10px;
+  background: #ea916b;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+  margin: 30px auto;
+}
+
+.text_card {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+}
+.container_content__card > .text_card:first-child {
+  padding-bottom: 2em;
+}
+
+/* -------------------
+    Contact page
+----------------------*/
+.page-id-contact hr {
+  width: 88px;
+}
+.container_content__card_contato {
+  width: 680px;
+  height: 404px;
+  padding: 40px;
+  border-radius: 10px;
+  background: #ea916b;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+  margin: 30px auto;
+}
+.container_content__button_send {
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  background: #373735;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+  background: #373735;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.16));
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  margin: 22px auto 40px;
+  border: none;
+  text-transform: uppercase;
+
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+.container_content__button_send:hover {
+  filter: drop-shadow(10px 29px 20px rgba(0, 0, 0, 0.2));
+}
+
+form {
+  display: flex;
+  align-content: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+input {
+  width: 292px;
+  height: 46px;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  margin: 8px 0;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  margin: 8px 0;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+textarea::-webkit-input-placeholder {
+  /* Edge */
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  color: #999;
+}
+
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  color: #999;
+  padding: 20px;
+}
+
+textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  color: #999;
+}
+
+/* ---------------
+    media querys
+  ----------------- */
+
+@media only screen and (max-width: 1000px) {
+  section {
+    padding: 20px;
+  }
+  input {
+    width: 100%;
+  }
+  .container_content__card {
+    width: auto;
+    height: auto;
+  }
+  .buttons {
+    /* padding: 12px 54px; */
+    margin: 2px 0;
+  }
+  .container_content__card_contato {
+    width: auto;
+    height: auto;
+  }
+  .container_content__button_send {
+    margin: 22px auto 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container_content__buttons {
+    display: contents;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  input {
+    width: 48%;
+    height: 48%;
+  }
+}
